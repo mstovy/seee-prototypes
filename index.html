@@ -92,7 +92,8 @@
             <dt>
                 <p class="multiSel selection-container"></p>
                 <a href="#">
-                    <span style="align-self: center;" class="hida">Select NAICS Code</span>
+                    <input type="text" placeholder="Select NAICS Code" id="myInput"onkeyup="filterFunction()" >
+                    <!-- <span style="align-self: center;" class="hida">Select NAICS Code</span> -->
                 </a>
                 <a style="background-color: white; color: blue;" href="https://siccode.com/naics-code-lookup-directory"
                     target="_blank">Click here to learn about NAICS Codes</a>
@@ -100,7 +101,7 @@
 
             <dd>
                 <div class="mutliSelect">
-                    <ul>
+                    <ul id="multiSelect">
                         <li>
                             <input type="checkbox" value="11. Agriculture, Forestry and Fishing" />[11] Agriculture,
                             Forestry and Fishing
@@ -208,6 +209,7 @@
         if ($(this).is(':checked')) {
             var html = '<span class="industry-selection" onclick="remove(this)" title="' + title + '">[X] ' + title + '</span>';
             $('.multiSel').append(html);
+            $(".hida").hide();
         } else {
             $('span[title="' + title + '"]').remove();
             var ret = $(".hida");
