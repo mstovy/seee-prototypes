@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SEEE Industry Selection Prototype</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <dl class="dropdown">
+            <!--
+            <dt><p class="multiSel"></p>
+                <a href="#">
+                    <span class="hida">Select ISIC Code</span>
+                </a>
+            </dt>
+
+            <dd>
+                <div class="mutliSelect">
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="A. Agriculture, Forestry and Fishing" />[A] Agriculture, Forestry and Fishing
+                        </li>
+                        <li>
+                            <input type="checkbox" value="B. Mining and Quarrying" />[B] Mining and Quarrying
+                        </li>
+                        <li>
+                            <input type="checkbox" value="C. Manufacturing" />[C] Manufacturing
+                        </li>
+                        <li>
+                            <input type="checkbox" value="D. Electricity, Gas, Steam, and Air Conditioning Supply" />[D] Electricity, Gas, Steam, and Air Conditioning Supply
+                        </li>
+                        <li>
+                            <input type="checkbox" value="E. Water supply; Sewerage, Waste Management and Remediation Activities" />[E] Water supply; Sewerage, Waste Management and Remediation Activities
+                        </li>
+                        <li>
+                            <input type="checkbox" value="F. Construction" />[F] Construction
+                        </li>
+                        <li>
+                            <input type="checkbox" value="G. Wholesale and Retail Trade; Reapir of Motor Vehicles and Motorcycles" />[G] Wholesale and Retail Trade; Reapir of Motor Vehicles and Motorcycles
+                        </li>
+                        <li>
+                            <input type="checkbox" value="H. Transportation and Storage" />[H] Transportation and Storage
+                        </li>
+                        <li>
+                            <input type="checkbox" value="I. Accomodation and Food Service Activities" />[I] Accomodation and Food Service Activities
+                        </li>
+                        <li>
+                            <input type="checkbox" value="J. Information and Communication" />[J] Information and Communication
+                        </li>
+                        <li>
+                            <input type="checkbox" value="K. Financial and Insurance Activities" />[K] Financial and Insurance Activities
+                        </li>
+                        <li>
+                            <input type="checkbox" value="L. Real Estate Activities" />[L] Real Estate Activities
+                        </li>
+                        <li>
+                            <input type="checkbox" value="M. Professional, Scientific and Technical Activities" />[M] Professional, Scientific and Technical Activities
+                        </li>
+                        <li>
+                            <input type="checkbox" value="N. Administrative and Support Service Activities" />[N] Administrative and Support Service Activities
+                        </li>
+                        <li>
+                            <input type="checkbox" value="O. Public Administration and Defence; Compulsory Social Security" />[O] Public Administration and Defence; Compulsory Social Security
+                        </li>
+                        <li>
+                            <input type="checkbox" value="P. Education" />[P] Education
+                        </li>
+                        <li>
+                            <input type="checkbox" value="Q. Human Helath and Social Work Activities" />[Q] Human Helath and Social Work Activities
+                        </li>
+                        <li>
+                            <input type="checkbox" value="R. Arts, Entertainment and Recreation" />[R] Arts, Entertainment and Recreation
+                        </li>
+                        <li>
+                            <input type="checkbox" value="S. Other Service Activities" />[S] Other Service Activities
+                        </li>
+                        <li>
+                            <input type="checkbox" value="T. Activities of Households as Employers" />[T] Activities of Households as Employers; Undifferentiated Goods and Services Producing Activities of Households for Own Use
+                        </li>
+                        <li>
+                            <input type="checkbox" value="U. Activities of Extraterritorial Organizations and Bodies" />[U] Activities of Extraterritorial Organizations and Bodies
+                        </li>
+                    </ul>
+                </div>
+            </dd>
+            -->
+            <dt>
+                <p class="multiSel selection-container"></p>
+                <a href="#">
+                    <span style="align-self: center;" class="hida">Select NAICS Code</span>
+                </a>
+                <a style="background-color: white; color: blue;" href="https://siccode.com/naics-code-lookup-directory"
+                    target="_blank">Click here to learn about NAICS Codes</a>
+            </dt>
+
+            <dd>
+                <div class="mutliSelect">
+                    <ul>
+                        <li>
+                            <input type="checkbox" value="11. Agriculture, Forestry and Fishing" />[11] Agriculture,
+                            Forestry and Fishing
+                        </li>
+                        <li>
+                            <input type="checkbox" value="21. Mining, Quarrying, Oil, Gas Extraction" />[21] Mining,
+                            Quarrying, Oil, Gas Extraction
+                        </li>
+                        <li>
+                            <input type="checkbox" value="22. Utilities" />[22] Utilities
+                        </li>
+                        <li>
+                            <input type="checkbox" value="23. Construction" />[23] Construction
+                        </li>
+                        <li>
+                            <input type="checkbox"
+                                value="31-33. Water supply; Sewerage, Waste Management and Remediation Activities" />[31-33]
+                            Manufacturing
+                        </li>
+                        <li>
+                            <input type="checkbox" value="42. Wholesale Trade" />[42] Wholesale Trade
+                        </li>
+                        <li>
+                            <input type="checkbox" value="44-45. Retail Trade" />[44-45] Retail Trade
+                        <li>
+                            <input type="checkbox" value="48-49. Transportation and Warehousing" />[48-49]
+                            Transportation and Warehousing
+                        </li>
+                        <li>
+                            <input type="checkbox" value="51. Information" />[51] Information
+                        </li>
+                        <li>
+                            <input type="checkbox" value="52. Finance and Insurance" />[52] Finance and Insurance
+                        </li>
+                        <li>
+                            <input type="checkbox" value="53. Real Estate, Rental, Leasing" />[53] Real Estate, Rental,
+                            Leasing
+                        </li>
+                        <li>
+                            <input type="checkbox" value="54. Professional, Scientific, Tech. Services" />[54]
+                            Professional, Scientific, Tech. Services
+                        </li>
+                        <li>
+                            <input type="checkbox" value="55. Mgmt. of Companies & Enterprises" />[55] Mgmt. of
+                            Companies & Enterprises
+                        </li>
+                        <li>
+                            <input type="checkbox"
+                                value="56. Administrative, Support, Waste Mgmt., Remediation Service" />[56]
+                            Administrative, Support, Waste Mgmt., Remediation Service
+                        </li>
+                        <li>
+                            <input type="checkbox" value="61. Educational Services" />[61] Educational Services
+                        </li>
+                        <li>
+                            <input type="checkbox" value="62. Health Care and Social Assistance" />[62] Health Care and
+                            Social Assistance
+                        </li>
+                        <li>
+                            <input type="checkbox" value="71. Arts, Entertainment, Recreation" />[71] Arts,
+                            Entertainment, Recreation
+                        </li>
+                        <li>
+                            <input type="checkbox" value="72. Accommodation and Food Services" />[72] Accommodation and
+                            Food Services
+                        </li>
+                        <li>
+                            <input type="checkbox" value="81. Other Service (except Public Administration)" />[81] Other
+                            Service (except Public Administration)
+                        </li>
+                        <li>
+                            <input type="checkbox" value="92. Activities of Households as Employers" />[92] Public
+                            Administration
+                        </li>
+                    </ul>
+                </div>
+            </dd>
+            <button action="/">Select</button>
+        </dl>
+    </div>
+</body>
+<script>
+    $(".dropdown dt a").on('click', function () {
+        $(".dropdown dd ul").slideToggle('fast');
+    });
+
+    $(".dropdown dd ul li a").on('click', function () {
+        $(".dropdown dd ul").hide();
+    });
+
+    function getSelectedValue(id) {
+        return $("#" + id).find("dt a span.value").html();
+    }
+
+    $(document).bind('click', function (e) {
+        var $clicked = $(e.target);
+        if (!$clicked.parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
+    });
+
+    $('.mutliSelect input[type="checkbox"]').on('click', function () {
+
+        var title = $(this).closest('.mutliSelect').find('input[type="checkbox"]').val(),
+            title = $(this).val();
+
+        if ($(this).is(':checked')) {
+            var html = '<span class="industry-selection" onclick="remove(this)" title="' + title + '">[X] ' + title + '</span>';
+            $('.multiSel').append(html);
+        } else {
+            $('span[title="' + title + '"]').remove();
+            var ret = $(".hida");
+        }
+    })
+</script>
+
+</html>
